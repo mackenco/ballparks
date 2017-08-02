@@ -15,15 +15,15 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "data": "node data/data.js",
+    "data": "node data/index.js",
     "build": "npm run data && gatsby build",
     "develop": "npm run data && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "precommit": "npm run format && git add .",
-    "test": "npm run format && git add ."
+    "precommit": "npm run format && git add ."
   },
   "devDependencies": {
     "husky": "^0.14.3",
+    "json-loader": "^0.5.7",
     "prettier": "^1.5.2"
   }
 }
