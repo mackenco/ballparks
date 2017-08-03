@@ -1,7 +1,7 @@
 export default {
  "ballparks": [
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/02/angel15955.jpg",
    "name": "Angel Stadium",
    "capacity": "45,477",
    "location": "Anaheim, California",
@@ -10,10 +10,10 @@ export default {
    "opened": "1966",
    "topology": "Modern\nRetro Modern",
    "visited": "2008",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/attv5.jpg",
    "name": "AT&T Park",
    "capacity": "41,915",
    "location": "San Francisco, California",
@@ -22,10 +22,10 @@ export default {
    "opened": "2000",
    "topology": "Retro Classic",
    "visited": "2010",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/busch_topv6.jpg",
    "name": "Busch Stadium",
    "capacity": "45,529",
    "location": "St. Louis, Missouri",
@@ -34,10 +34,10 @@ export default {
    "opened": "2006",
    "topology": "Retro Classic",
    "visited": "2011",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase_topv2.jpg",
    "name": "Chase Field",
    "capacity": "48,686",
    "location": "Phoenix, Arizona",
@@ -45,11 +45,11 @@ export default {
    "team": "Arizona Diamondbacks",
    "opened": "1998",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citi_topv2.jpg",
    "name": "Citi Field",
    "capacity": "41,922",
    "location": "Queens, New York",
@@ -58,10 +58,10 @@ export default {
    "opened": "2009",
    "topology": "Retro Classic",
    "visited": "2016",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg",
    "name": "Citizens Bank Park",
    "capacity": "43,651",
    "location": "Philadelphia, Pennsylvania",
@@ -69,11 +69,11 @@ export default {
    "team": "Philadelphia Phillies",
    "opened": "2004",
    "topology": "Retro Classic",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/comerica17_top.jpg",
    "name": "Comerica Park",
    "capacity": "41,299",
    "location": "Detroit, Michigan",
@@ -82,10 +82,10 @@ export default {
    "opened": "2000",
    "topology": "Retro Classic",
    "visited": "2011",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/coors16952.jpg",
    "name": "Coors Field",
    "capacity": "50,398",
    "location": "Denver, Colorado",
@@ -94,10 +94,10 @@ export default {
    "opened": "1995",
    "topology": "Retro Classic",
    "visited": "2009",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/dodger16_top3.jpg",
    "name": "Dodger Stadium",
    "capacity": "56,000",
    "location": "Los Angeles, California",
@@ -106,10 +106,10 @@ export default {
    "opened": "1962",
    "topology": "Modern",
    "visited": "2008",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg",
    "name": "Fenway Park",
    "capacity": "37,731",
    "location": "Boston, Massachusetts",
@@ -117,11 +117,11 @@ export default {
    "team": "Boston Red Sox[nb 2]",
    "opened": "1912",
    "topology": "Jewel Box",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/globe_topv2.jpg",
    "name": "Globe Life Park in Arlington",
    "capacity": "48,114",
    "location": "Arlington, Texas",
@@ -130,10 +130,10 @@ export default {
    "opened": "1994",
    "topology": "Retro Classic",
    "visited": "2005",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab16951.jpg",
    "name": "Great American Ball Park",
    "capacity": "42,319",
    "location": "Cincinnati, Ohio",
@@ -141,11 +141,11 @@ export default {
    "team": "Cincinnati Reds",
    "opened": "2003",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/uscell_topv2.jpg",
    "name": "Guaranteed Rate Field",
    "capacity": "40,615",
    "location": "Chicago, Illinois",
@@ -153,11 +153,11 @@ export default {
    "team": "Chicago White Sox",
    "opened": "1991",
    "topology": "Modern\nRetro Classic",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/kauffman16950.jpg",
    "name": "Kauffman Stadium",
    "capacity": "37,903",
    "location": "Kansas City, Missouri",
@@ -165,11 +165,11 @@ export default {
    "team": "Kansas City Royals",
    "opened": "1973",
    "topology": "Modern\nRetro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/marlins_topv2.jpg",
    "name": "Marlins Park",
    "capacity": "36,742",
    "location": "Miami, Florida",
@@ -178,10 +178,10 @@ export default {
    "opened": "2012",
    "topology": "Contemporary",
    "visited": "2014",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/miller_topv3.jpg",
    "name": "Miller Park",
    "capacity": "41,900",
    "location": "Milwaukee, Wisconsin",
@@ -189,11 +189,11 @@ export default {
    "team": "Milwaukee Brewers",
    "opened": "2001",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/minute_topv3.jpg",
    "name": "Minute Maid Park",
    "capacity": "41,168",
    "location": "Houston, Texas",
@@ -202,10 +202,10 @@ export default {
    "opened": "2000",
    "topology": "Retro Modern",
    "visited": "2000",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/nats16950.jpg",
    "name": "Nationals Park",
    "capacity": "41,339",
    "location": "Washington, D.C.",
@@ -214,11 +214,11 @@ export default {
    "opened": "2008",
    "topology": "Retro Modern",
    "visited": "2014",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
-   "name": "Oakland–Alameda County Coliseum[17]",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/oco_topv2-600x298.jpg",
+   "name": "Oakland–Alameda County Coliseum",
    "capacity": "47,170",
    "location": "Oakland, California",
    "surface": "Grass",
@@ -226,10 +226,10 @@ export default {
    "opened": "1966",
    "topology": "Multipurpose",
    "visited": "2017",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/02/camden_top-1.jpg",
    "name": "Oriole Park at Camden Yards",
    "capacity": "45,971",
    "location": "Baltimore, Maryland",
@@ -237,11 +237,11 @@ export default {
    "team": "Baltimore Orioles",
    "opened": "1992",
    "topology": "Retro Classic",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/petco_topv2.jpg",
    "name": "Petco Park",
    "capacity": "40,209",
    "location": "San Diego, California",
@@ -250,10 +250,10 @@ export default {
    "opened": "2004",
    "topology": "Retro Modern",
    "visited": "2007",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/pnc_topv2.jpg",
    "name": "PNC Park",
    "capacity": "38,362",
    "location": "Pittsburgh, Pennsylvania",
@@ -261,11 +261,11 @@ export default {
    "team": "Pittsburgh Pirates",
    "opened": "2001",
    "topology": "Retro Classic",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/prog_top.jpg",
    "name": "Progressive Field",
    "capacity": "35,051",
    "location": "Cleveland, Ohio",
@@ -273,11 +273,11 @@ export default {
    "team": "Cleveland Indians",
    "opened": "1994",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers_topv5.jpg",
    "name": "Rogers Centre",
    "capacity": "49,282",
    "location": "Toronto, Ontario",
@@ -285,11 +285,11 @@ export default {
    "team": "Toronto Blue Jays",
    "opened": "1989",
    "topology": "Multipurpose",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/safeco_top.jpg",
    "name": "Safeco Field",
    "capacity": "47,943",
    "location": "Seattle, Washington",
@@ -297,11 +297,11 @@ export default {
    "team": "Seattle Mariners",
    "opened": "1999",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/04/suntrust17950-1.jpg",
    "name": "SunTrust Park",
    "capacity": "41,149",
    "location": "Cumberland, Georgia",
@@ -309,11 +309,11 @@ export default {
    "team": "Atlanta Braves",
    "opened": "2017",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/target_topv2.jpg",
    "name": "Target Field",
    "capacity": "38,885",
    "location": "Minneapolis, Minnesota",
@@ -321,11 +321,11 @@ export default {
    "team": "Minnesota Twins",
    "opened": "2010",
    "topology": "Retro Modern",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/tropicana_topv2.jpg",
    "name": "Tropicana Field",
    "capacity": "31,042",
    "location": "St. Petersburg, Florida",
@@ -333,11 +333,11 @@ export default {
    "team": "Tampa Bay Rays",
    "opened": "1990",
    "topology": "Multipurpose",
-   "visited": "",
-   "retired": ""
+   "visited": null,
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrigley_top.jpg",
    "name": "Wrigley Field",
    "capacity": "41,268",
    "location": "Chicago, Illinois",
@@ -346,10 +346,10 @@ export default {
    "opened": "1914",
    "topology": "Jewel Box",
    "visited": "2015",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/yankee_topv2.jpg",
    "name": "Yankee Stadium",
    "capacity": "47,422",
    "location": "Bronx, New York",
@@ -358,22 +358,10 @@ export default {
    "opened": "2009",
    "topology": "Retro Classic",
    "visited": "2016",
-   "retired": ""
+   "retired": null
   },
   {
-   "image": "",
-   "name": "Turner Field",
-   "capacity": "49,586",
-   "location": "Atlanta, Georgia",
-   "surface": "Grass",
-   "team": "Atlanta Braves",
-   "opened": "1997",
-   "topology": "Retro Classic",
-   "visited": "",
-   "retired": "2011"
-  },
-  {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/astro16_top.jpg",
    "name": "Houston Astrodome",
    "capacity": "54,816",
    "location": "Houston, Texas",
@@ -381,11 +369,23 @@ export default {
    "team": "Houston Astros",
    "opened": "1965",
    "topology": "Multipurpose",
-   "visited": "",
+   "visited": null,
    "retired": "1995"
   },
   {
-   "image": "",
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/turner11950.jpg",
+   "name": "Turner Field",
+   "capacity": "49,586",
+   "location": "Atlanta, Georgia",
+   "surface": "Grass",
+   "team": "Atlanta Braves",
+   "opened": "1997",
+   "topology": "Retro Classic",
+   "visited": null,
+   "retired": "2011"
+  },
+  {
+   "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/04/sunlife16_topv2.jpg",
    "name": "Sun Life Stadium",
    "capacity": "38,560",
    "location": "Miami, Florida",
@@ -393,7 +393,7 @@ export default {
    "team": "Florida Marlins",
    "opened": "1987",
    "topology": "Multipurpose",
-   "visited": "",
+   "visited": null,
    "retired": "2010"
   }
  ],
@@ -410,7 +410,7 @@ export default {
    "Marlins Park",
    "Minute Maid Park",
    "Nationals Park",
-   "Oakland–Alameda County Coliseum[17]",
+   "Oakland–Alameda County Coliseum",
    "Petco Park",
    "Wrigley Field",
    "Yankee Stadium"
@@ -433,8 +433,8 @@ export default {
    "Tropicana Field"
   ],
   "retired": [
-   "Turner Field",
    "Houston Astrodome",
+   "Turner Field",
    "Sun Life Stadium"
   ]
  }

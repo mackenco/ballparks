@@ -1,6 +1,5 @@
 import React from 'react'
 import data from '../../data/data.js'
-console.log(data)
 
 class Icon extends React.Component {
   constructor() {

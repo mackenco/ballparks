@@ -17,7 +17,6 @@ function saveData(data, tabletop) {
 
   const out = Object.assign({ ballparks: data }, { stats });
   const formatted = JSON.stringify(out, null, ' ')
-    .replace(new RegExp('"true"', 'ig'), true)
-    .replace(new RegExp('"false"', 'ig'), false);
+    .replace(new RegExp('""', 'ig'), null);
   fs.writeFileSync('data/data.js', `export default ${formatted}`);
 };

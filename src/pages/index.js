@@ -1,46 +1,61 @@
 import React from 'react'
+import data from '../../data/data.js'
 
-//TODO real data, how do you do media queries?, format on precommit
-const Ballpark = () =>
-  <div
-    style={{
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      paddingBottom: '3rem',
-    }}
-  >
-    <div>
-      <h3 style={{ marginBottom: '.75rem' }}>
-        Angel Stadium
-        <br />
-        <span
+//TODO how do you do media queries?
+class Ballpark extends React.Component {
+  constructor() {
+    super()
+  }
+
+  render() {
+    return (
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          paddingBottom: '3rem',
+          margin: '0 20px',
+        }}
+      >
+        <div>
+          <h3 style={{ marginBottom: '.75rem' }}>
+            {this.props.name}
+            <br />
+            <span
+              style={{
+                fontWeight: 'normal',
+                fontSize: '1.1rem',
+              }}
+            >
+              {this.props.location}
+            </span>
+          </h3>
+
+          <div>
+            <p style={{ fontSize: '.8rem' }}>
+              <b>Visit-</b>
+              {this.props.year}
+            </p>
+          </div>
+        </div>
+
+        <div
           style={{
-            fontWeight: 'normal',
-            fontSize: '1.1rem',
+            width: '600px',
+            marginLeft: '10px',
           }}
         >
-          Anaheim, California
-        </span>
-      </h3>
-
-      <div>
-        <p style={{ fontSize: '.8rem' }}>
-          <b>Visit-</b>2008
-        </p>
+          <img
+            style={{ minWidth: '600px' }}
+            src={this.props.image}
+            alt={this.props.name}
+          />
+        </div>
       </div>
-    </div>
-
-    <div
-      style={{
-        height: '400px',
-        width: '600px',
-        border: '1px solid black',
-      }}
-    >
-      <img />
-    </div>
-  </div>
+    )
+  }
+}
 
 class IndexPage extends React.Component {
   constructor() {
@@ -49,9 +64,22 @@ class IndexPage extends React.Component {
 
   render() {
     const parks = []
-    for (let i = 0; i < 10; i++) {
-      parks.push(<Ballpark />)
-    }
+    data.ballparks.forEach(bp => {
+      if (!bp.visited && !bp.retired) {
+        return
+      }
+
+      const kebabed = bp.name.toLowerCase().split(' ').join('-')
+      parks.push(
+        <Ballpark
+          id={kebabed}
+          name={bp.name}
+          image={bp.image}
+          location={bp.location}
+          year={bp.visited || bp.retired}
+        />
+      )
+    })
 
     return (
       <div>
