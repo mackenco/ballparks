@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 
 import './index.css'
 
@@ -11,40 +12,42 @@ const linkStyle = {
   margin: '0 .25rem',
 }
 
-const Header = () =>
-  <div>
-    <div
-      style={{
-        margin: '0 auto 2rem auto',
-        maxWidth: 960,
-        padding: '1rem 0',
-        borderBottom: '2px solid #3498db',
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link to="/" style={linkStyle}>
-          Ballpark Visits
-        </Link>
-      </h1>
+const HeaderContainer = styled.div`
+  margin: 0 auto 2rem auto;
+  width: 90%;
+  max-width: 960px;
+  padding: 1rem 0;
+  border-bottom: 2px solid #3498db;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media (max-width: 960px) {
+    flex-direction: column;
+  }
+`
 
-      <nav
-        style={{
-          lineHeight: '3rem',
-          height: '1rem',
-        }}
-      >
-        <Link style={linkStyle} to="/about/">
-          About
-        </Link>
-        <Link style={linkStyle} to="/stats/">
-          Stats
-        </Link>
-      </nav>
-    </div>
-  </div>
+const NavLinks = styled.nav`
+  line-height: 3rem;
+  height: 1rem;
+`
+
+const Header = () =>
+  <HeaderContainer>
+    <h1 style={{ margin: 0 }}>
+      <Link to="/" style={linkStyle}>
+        Ballpark Visits
+      </Link>
+    </h1>
+
+    <NavLinks>
+      <Link style={linkStyle} to="/about/">
+        About
+      </Link>
+      <Link style={linkStyle} to="/stats/">
+        Stats
+      </Link>
+    </NavLinks>
+  </HeaderContainer>
 
 const TemplateWrapper = ({ children }) =>
   <div>
