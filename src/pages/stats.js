@@ -2,13 +2,23 @@ import React from 'react'
 import styled from 'styled-components'
 import data from '../../data/data.js'
 
+const Container = styled.div`padding: 0 10px;`
+
 const FlexDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   width: 75%;
+  @media (max-width: 960px) {
+    width: 100%;
+  }
 `
 
-const FlexSvg = styled.svg`flex-basis: calc(100% / 15);`
+const FlexSvg = styled.svg`
+  flex-basis: calc(100% / 15);
+  @media (max-width: 960px) {
+    flex-basis: calc(100% / 10);
+  }
+`
 
 class Icon extends React.Component {
   constructor() {
@@ -52,7 +62,7 @@ class StatsPage extends React.Component {
     }
 
     return (
-      <div>
+      <Container>
         <h2 style={{ marginBottom: '3rem' }}>Stats</h2>
 
         <h1 style={{ fontSize: '6rem' }}>
@@ -79,7 +89,7 @@ class StatsPage extends React.Component {
         <p style={{ color: '#9c0000' }}>
           {stats.retired.join(', ')}
         </p>
-      </div>
+      </Container>
     )
   }
 }
