@@ -2,6 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import data from '../../data/data.js'
 
+const colors = {
+  remaining: '#666666',
+  retired: '#9c0000',
+}
+
 const Container = styled.div`padding: 0 10px;`
 
 const FlexDiv = styled.div`
@@ -18,6 +23,11 @@ const FlexSvg = styled.svg`
   @media (max-width: 960px) {
     flex-basis: calc(100% / 10);
   }
+`
+
+const Heading = styled.h4`
+  color: ${props => props.color};
+  margin-bottom: .75rem;
 `
 
 class Icon extends React.Component {
@@ -77,15 +87,15 @@ class StatsPage extends React.Component {
         <p>
           {stats.visited.join(', ')}
         </p>
-        <h4 style={{ color: '#666666' }}>
+        <Heading color={colors.remaining}>
           {stats.remaining.length} Remaining
-        </h4>
+        </Heading>
         <p style={{ color: '#666666' }}>
           {stats.remaining.join(', ')}
         </p>
-        <h4 style={{ color: '#9c0000' }}>
+        <Heading color={colors.retired}>
           {stats.retired.length} Retired Parks Visited
-        </h4>
+        </Heading>
         <p style={{ color: '#9c0000' }}>
           {stats.retired.join(', ')}
         </p>

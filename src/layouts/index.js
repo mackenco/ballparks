@@ -23,6 +23,7 @@ const HeaderContainer = styled.div`
   justify-content: space-between;
   @media (max-width: 960px) {
     flex-direction: column;
+    margin: 0 10px 2rem 10px;
   }
 `
 
