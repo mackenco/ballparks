@@ -32,6 +32,12 @@ const NavLinks = styled.nav`
   height: 1rem;
 `
 
+const NavLink = styled.a`
+  :hover {
+    font-weight: bold;
+  }
+`
+
 const Header = () =>
   <HeaderContainer>
     <h1 style={{ margin: 0 }}>
@@ -41,12 +47,16 @@ const Header = () =>
     </h1>
 
     <NavLinks>
-      <Link style={linkStyle} to="/about/">
-        About
-      </Link>
-      <Link style={linkStyle} to="/stats/">
-        Stats
-      </Link>
+      <NavLink>
+        {' '}<Link style={linkStyle} to="/about/">
+          {' '}About{' '}
+        </Link>
+      </NavLink>
+      <NavLink>
+        <Link style={linkStyle} to="/stats/">
+          {' '}Stats{' '}
+        </Link>
+      </NavLink>
     </NavLinks>
   </HeaderContainer>
 
