@@ -1,6 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import visitedIcon from '../images/visited-icon.png'
+import Map from '../components/Map.js'
 import data from '../../data/data.js'
+console.log(visitedIcon)
 
 const colors = {
   remaining: '#666666',
@@ -58,23 +61,47 @@ class StatsPage extends React.Component {
   render() {
     const icons = []
     const stats = data.stats
+    const states = [
+      { key: 'visited', color: '000088' },
+      { key: 'remaining', color: 'd2d2d2' },
+      { key: 'retired', color: 'cc0000' },
+    ]
 
-    for (let i = 0; i < stats.visited.length; i++) {
-      icons.push(<Icon key={icons.length} color="#000088" />)
-    }
+    const [
+      visitedCoords,
+      remainingCoords,
+      retiredCoords,
+    ] = states.map(state => {
+      const { key, color } = state
 
-    for (let i = 0; i < stats.remaining.length; ++i) {
-      icons.push(<Icon key={icons.length} color="#d2d2d2" />)
-    }
+      // return [`color:0x${color}`, ...stats[key].map((bp) => {
+      return [
+        `icon:${visitedIcon}`,
+        ...stats[key].map(bp => {
+          icons.push(<Icon key={icons.length} color={'#' + color} />)
+          return `${bp.latitude},${bp.longitude}`
+        }),
+      ].join('%7C')
+    })
+    console.log(visitedCoords)
 
-    for (let i = 0; i < stats.retired.length; i++) {
-      icons.push(<Icon key={icons.length} color="#cc0000" />)
-    }
+    const mapStyle = [].join('%7C')
+
+    const src = [
+      'https://maps.googleapis.com/maps/api/staticmap?size=640x380',
+      'zoom=4',
+      `markers=${visitedCoords}`,
+      `markers=${remainingCoords}`,
+      `markers=${retiredCoords}`,
+      `key=AIzaSyAxmXsbKcxcN_HPaMxvcYDtOJSVLCunig0`,
+      `style=${mapStyle}`,
+    ].join('&')
 
     return (
       <Container>
         <h2 style={{ marginBottom: '3rem' }}>Stats</h2>
 
+        <img src={src} />
         <h1 style={{ fontSize: '6rem' }}>
           {stats.visited.length}
         </h1>
@@ -85,19 +112,19 @@ class StatsPage extends React.Component {
         </FlexDiv>
         <br />
         <p>
-          {stats.visited.join(', ')}
+          {stats.visited.map(b => b.name).join(', ')}
         </p>
         <Heading color={colors.remaining}>
           {stats.remaining.length} Remaining
         </Heading>
         <p style={{ color: '#666666' }}>
-          {stats.remaining.join(', ')}
+          {stats.remaining.map(b => b.name).join(', ')}
         </p>
         <Heading color={colors.retired}>
           {stats.retired.length} Retired Parks Visited
         </Heading>
         <p style={{ color: '#9c0000' }}>
-          {stats.retired.join(', ')}
+          {stats.retired.map(b => b.name).join(', ')}
         </p>
       </Container>
     )

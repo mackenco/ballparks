@@ -10,9 +10,9 @@ Tabletop.init({
 function saveData(data, tabletop) {
   const stats = { visited: [], remaining: [], retired: [] };
   data.forEach((bp) => {
-    if (bp.visited) { stats.visited.push(bp.name); }
-    if (bp.retired) { stats.retired.push(bp.name); }
-    if (!bp.visited && !bp.retired) { stats.remaining.push(bp.name); }
+    if (bp.visited) { stats.visited.push(bp); }
+    if (bp.retired) { stats.retired.push(bp); }
+    if (!bp.visited && !bp.retired) { stats.remaining.push(bp); }
   });
 
   const out = Object.assign({ ballparks: data }, { stats });

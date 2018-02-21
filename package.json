@@ -16,13 +16,15 @@
   "main": "n/a",
   "scripts": {
     "data": "node data/index.js",
+    "deploy": "npm run data && gatsby build --prefix-paths && gh-pages -d public",
     "build": "npm run data && gatsby build",
-    "develop": "npm run data && gatsby develop",
+    "dev": "npm run data && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "precommit": "npm run format && git add ."
   },
   "devDependencies": {
     "gatsby-plugin-styled-components": "^1.0.1",
+    "gh-pages": "^1.0.0",
     "husky": "^0.14.3",
     "json-loader": "^0.5.7",
     "prettier": "^1.5.2"
