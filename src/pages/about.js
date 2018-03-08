@@ -6,7 +6,7 @@ const linkStyle = {
   textDecoration: 'none',
 }
 
-const AboutPage = () =>
+const AboutPage = () => (
   <div>
     <h2>About</h2>
     <p>
@@ -89,5 +89,6 @@ const AboutPage = () =>
       </a>
     </p>
   </div>
+)
 
 export default AboutPage

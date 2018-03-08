@@ -32,7 +32,7 @@ const NavLinks = styled.nav`
   height: 1rem;
 `
 
-const Header = () =>
+const Header = () => (
   <HeaderContainer>
     <h1 style={{ margin: 0 }}>
       <Link to="/" style={linkStyle}>
@@ -42,15 +42,18 @@ const Header = () =>
 
     <NavLinks>
       <Link style={linkStyle} to="/about/">
-        {' '}About{' '}
+        {' '}
+        About{' '}
       </Link>
       <Link style={linkStyle} to="/stats/">
-        {' '}Stats{' '}
+        {' '}
+        Stats{' '}
       </Link>
     </NavLinks>
   </HeaderContainer>
+)
 
-const TemplateWrapper = ({ children }) =>
+const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
       title="Ballpark Visits"
@@ -68,6 +71,7 @@ const TemplateWrapper = ({ children }) =>
       {children()}
     </div>
   </div>
+)
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

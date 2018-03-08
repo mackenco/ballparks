@@ -1,16 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
-import visitedIcon from '../images/visited-icon.png'
-import Map from '../components/Map.js'
+import { withPrefix } from 'gatsby-link'
+
 import data from '../../data/data.js'
-console.log(visitedIcon)
 
 const colors = {
   remaining: '#666666',
   retired: '#9c0000',
 }
 
-const Container = styled.div`padding: 0 10px;`
+const Container = styled.div`
+  padding: 0 10px;
+`
 
 const FlexDiv = styled.div`
   display: flex;
@@ -30,7 +31,7 @@ const FlexSvg = styled.svg`
 
 const Heading = styled.h4`
   color: ${props => props.color};
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 `
 
 class Icon extends React.Component {
@@ -67,23 +68,21 @@ class StatsPage extends React.Component {
       { key: 'retired', color: 'cc0000' },
     ]
 
-    const [
-      visitedCoords,
-      remainingCoords,
-      retiredCoords,
-    ] = states.map(state => {
-      const { key, color } = state
+    const [visitedCoords, remainingCoords, retiredCoords] = states.map(
+      state => {
+        const { key, color } = state
+        const icon = withPrefix(`${state}.png'`)
 
-      // return [`color:0x${color}`, ...stats[key].map((bp) => {
-      return [
-        `icon:${visitedIcon}`,
-        ...stats[key].map(bp => {
-          icons.push(<Icon key={icons.length} color={'#' + color} />)
-          return `${bp.latitude},${bp.longitude}`
-        }),
-      ].join('%7C')
-    })
-    console.log(visitedCoords)
+        return [
+          `icon:${icon}`,
+          // `color:0x${color}`,
+          ...stats[key].map(bp => {
+            icons.push(<Icon key={icons.length} color={'#' + color} />)
+            return `${bp.latitude},${bp.longitude}`
+          }),
+        ].join('%7C')
+      }
+    )
 
     const mapStyle = [].join('%7C')
 
@@ -94,7 +93,7 @@ class StatsPage extends React.Component {
       `markers=${remainingCoords}`,
       `markers=${retiredCoords}`,
       `key=AIzaSyAxmXsbKcxcN_HPaMxvcYDtOJSVLCunig0`,
-      `style=${mapStyle}`,
+      // `style=${mapStyle}`,
     ].join('&')
 
     return (
@@ -102,18 +101,12 @@ class StatsPage extends React.Component {
         <h2 style={{ marginBottom: '3rem' }}>Stats</h2>
 
         <img src={src} />
-        <h1 style={{ fontSize: '6rem' }}>
-          {stats.visited.length}
-        </h1>
+        <h1 style={{ fontSize: '6rem' }}>{stats.visited.length}</h1>
 
         <h2>Ballparks Visited</h2>
-        <FlexDiv>
-          {' '}{icons}{' '}
-        </FlexDiv>
+        <FlexDiv> {icons} </FlexDiv>
         <br />
-        <p>
-          {stats.visited.map(b => b.name).join(', ')}
-        </p>
+        <p>{stats.visited.map(b => b.name).join(', ')}</p>
         <Heading color={colors.remaining}>
           {stats.remaining.length} Remaining
         </Heading>

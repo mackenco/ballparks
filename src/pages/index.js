@@ -10,7 +10,10 @@ class IndexPage extends React.Component {
   render() {
     const parks = data.ballparks.reduce((out, bp) => {
       if (bp.visited || bp.retired) {
-        const kebabed = bp.name.toLowerCase().split(' ').join('-')
+        const kebabed = bp.name
+          .toLowerCase()
+          .split(' ')
+          .join('-')
         out.push(
           <Ballpark
             key={kebabed}
@@ -24,11 +27,7 @@ class IndexPage extends React.Component {
       return out
     }, [])
 
-    return (
-      <main>
-        {parks}
-      </main>
-    )
+    return <main>{parks}</main>
   }
 }
 

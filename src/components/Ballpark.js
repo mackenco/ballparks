@@ -13,14 +13,18 @@ const FlexContainer = styled.div`
   }
 `
 
-const Name = styled.h3`margin-bottom: .75rem;`
+const Name = styled.h3`
+  margin-bottom: 0.75rem;
+`
 
 const Location = styled.span`
   font-weight: normal;
   font-size: 1.1rem;
 `
 
-const Visit = styled.p`font-size: .8rem;`
+const Visit = styled.p`
+  font-size: 0.8rem;
+`
 
 const ImageContainer = styled.div`
   width: 600px;
@@ -50,9 +54,7 @@ class Ballpark extends React.Component {
           <Name>
             {this.props.name}
             <br />
-            <Location>
-              {this.props.location}
-            </Location>
+            <Location>{this.props.location}</Location>
           </Name>
 
           <Visit>
