@@ -71,11 +71,10 @@ class StatsPage extends React.Component {
     const [visitedCoords, remainingCoords, retiredCoords] = states.map(
       state => {
         const { key, color } = state
-        const icon = withPrefix(`${state}.png'`)
+        const icon = withPrefix(`${state}.png'`) // TODO Get this to work
 
         return [
-          `icon:${icon}`,
-          // `color:0x${color}`,
+          `color:0x${color}`,
           ...stats[key].map(bp => {
             icons.push(<Icon key={icons.length} color={'#' + color} />)
             return `${bp.latitude},${bp.longitude}`
@@ -100,13 +99,13 @@ class StatsPage extends React.Component {
       <Container>
         <h2 style={{ marginBottom: '3rem' }}>Stats</h2>
 
-        <img src={src} />
         <h1 style={{ fontSize: '6rem' }}>{stats.visited.length}</h1>
 
         <h2>Ballparks Visited</h2>
         <FlexDiv> {icons} </FlexDiv>
         <br />
         <p>{stats.visited.map(b => b.name).join(', ')}</p>
+        <img src={src} />
         <Heading color={colors.remaining}>
           {stats.remaining.length} Remaining
         </Heading>
