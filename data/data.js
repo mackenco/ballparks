@@ -79,7 +79,7 @@ export default {
    "team": "Philadelphia Phillies",
    "opened": "2004",
    "topology": "Retro Classic",
-   "visited": null,
+   "visited": "2018",
    "retired": null,
    "latitude": "39.9060534",
    "longitude": "-75.16645592"
@@ -331,7 +331,7 @@ export default {
    "team": "Toronto Blue Jays",
    "opened": "1989",
    "topology": "Multipurpose",
-   "visited": null,
+   "visited": "2018",
    "retired": null,
    "latitude": "43.64148047",
    "longitude": "-79.38911022"
@@ -522,6 +522,20 @@ export default {
     "longitude": "-73.84588158"
    },
    {
+    "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg",
+    "name": "Citizens Bank Park",
+    "capacity": "43,651",
+    "location": "Philadelphia, Pennsylvania",
+    "surface": "Grass",
+    "team": "Philadelphia Phillies",
+    "opened": "2004",
+    "topology": "Retro Classic",
+    "visited": "2018",
+    "retired": null,
+    "latitude": "39.9060534",
+    "longitude": "-75.16645592"
+   },
+   {
     "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/comerica17_top.jpg",
     "name": "Comerica Park",
     "capacity": "41,299",
@@ -662,6 +676,20 @@ export default {
     "longitude": "-117.1570771"
    },
    {
+    "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers_topv5.jpg",
+    "name": "Rogers Centre",
+    "capacity": "49,282",
+    "location": "Toronto, Ontario",
+    "surface": "AstroTurf",
+    "team": "Toronto Blue Jays",
+    "opened": "1989",
+    "topology": "Multipurpose",
+    "visited": "2018",
+    "retired": null,
+    "latitude": "43.64148047",
+    "longitude": "-79.38911022"
+   },
+   {
     "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrigley_top.jpg",
     "name": "Wrigley Field",
     "capacity": "41,268",
@@ -704,20 +732,6 @@ export default {
     "retired": null,
     "latitude": "33.44555386",
     "longitude": "-112.0669261"
-   },
-   {
-    "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg",
-    "name": "Citizens Bank Park",
-    "capacity": "43,651",
-    "location": "Philadelphia, Pennsylvania",
-    "surface": "Grass",
-    "team": "Philadelphia Phillies",
-    "opened": "2004",
-    "topology": "Retro Classic",
-    "visited": null,
-    "retired": null,
-    "latitude": "39.9060534",
-    "longitude": "-75.16645592"
    },
    {
     "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab16951.jpg",
@@ -816,20 +830,6 @@ export default {
     "retired": null,
     "latitude": "41.495951",
     "longitude": "-81.6850958"
-   },
-   {
-    "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers_topv5.jpg",
-    "name": "Rogers Centre",
-    "capacity": "49,282",
-    "location": "Toronto, Ontario",
-    "surface": "AstroTurf",
-    "team": "Toronto Blue Jays",
-    "opened": "1989",
-    "topology": "Multipurpose",
-    "visited": null,
-    "retired": null,
-    "latitude": "43.64148047",
-    "longitude": "-79.38911022"
    },
    {
     "image": "http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/safeco_top.jpg",

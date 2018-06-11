@@ -63,8 +63,8 @@ class StatsPage extends React.Component {
     const icons = []
     const stats = data.stats
     const states = [
-      { key: 'visited', color: '000088' },
       { key: 'remaining', color: 'd2d2d2' },
+      { key: 'visited', color: '000088' },
       { key: 'retired', color: 'cc0000' },
     ]
 
@@ -88,9 +88,9 @@ class StatsPage extends React.Component {
     const src = [
       'https://maps.googleapis.com/maps/api/staticmap?size=640x380',
       'zoom=4',
-      `markers=${visitedCoords}`,
-      `markers=${remainingCoords}`,
       `markers=${retiredCoords}`,
+      `markers=${remainingCoords}`,
+      `markers=${visitedCoords}`,
       `key=AIzaSyAxmXsbKcxcN_HPaMxvcYDtOJSVLCunig0`,
       // `style=${mapStyle}`,
     ].join('&')
