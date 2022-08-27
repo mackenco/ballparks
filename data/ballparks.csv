@@ -1,0 +1,38 @@
+image,name,capacity,location,surface,team,opened,topology,visited,retired,latitude,longitude
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/02/angel15955.jpg,Angel Stadium,"45,477","Anaheim, California",Grass,Los Angeles Angels,1966,"Modern
+Retro Modern",2008,,33.80027207,-117.8826768
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/attv5.jpg,Oracle Park,"41,915","San Francisco, California",Grass,San Francisco Giants,2000,Retro Classic,2010,,37.77845256,-122.3895522
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/busch_topv6.jpg,Busch Stadium,"45,529","St. Louis, Missouri",Grass,St. Louis Cardinals,2006,Retro Classic,2011,,38.62263974,-90.1926772
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/chase_topv2.jpg,Chase Field,"48,686","Phoenix, Arizona",Grass,Arizona Diamondbacks,1998,Retro Modern,,,33.44555386,-112.0669261
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citi_topv2.jpg,Citi Field,"41,922","Queens, New York",Grass,New York Mets,2009,Retro Classic,2016,,40.75700925,-73.84588158
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/citbank_topv2.jpg,Citizens Bank Park,"43,651","Philadelphia, Pennsylvania",Grass,Philadelphia Phillies,2004,Retro Classic,2018,,39.9060534,-75.16645592
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/comerica17_top.jpg,Comerica Park,"41,299","Detroit, Michigan",Grass,Detroit Tigers,2000,Retro Classic,2011,,42.33917,-83.04882
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/coors16952.jpg,Coors Field,"50,398","Denver, Colorado",Grass,Colorado Rockies,1995,Retro Classic,2009,,39.75619849,-104.9940221
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/dodger16_top3.jpg,Dodger Stadium,"56,000","Los Angeles, California",Grass,Los Angeles Dodgers[nb 1],1962,Modern,2008,,34.073803,-118.2396178
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/fenway_topv3.jpg,Fenway Park,"37,731","Boston, Massachusetts",Grass,Boston Red Sox[nb 2],1912,Jewel Box,2017,,42.34663399,-71.09704347
+https://www.ballparksofbaseball.com/wp-content/uploads/2016/06/globe21950-1.jpg,Globe Life Field,"40,300","Arlington, Texas",Artificial turf,Texas Rangers,2020,Retro-modern,,,32.747361,-97.084167
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/gab16951.jpg,Great American Ball Park,"42,319","Cincinnati, Ohio",Grass,Cincinnati Reds,2003,Retro Modern,2019,,39.09729686,-84.50663142
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/uscell_topv2.jpg,Guaranteed Rate Field,"40,615","Chicago, Illinois",Grass,Chicago White Sox,1991,"Modern
+Retro Classic",2019,,41.829969,-87.633759
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/kauffman16950.jpg,Kauffman Stadium,"37,903","Kansas City, Missouri",Grass,Kansas City Royals,1973,"Modern
+Retro Modern",,,39.05145705,-94.4804408
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/marlins_topv2.jpg,LoanDepot Park,"36,742","Miami, Florida",Grass,Miami Marlins,2012,Contemporary,2014,,25.77839166,-80.21945593
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/miller_topv3.jpg,American Family Field,"41,900","Milwaukee, Wisconsin",Grass,Milwaukee Brewers,2001,Retro Modern,,,43.02794225,-87.97111471
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/minute_topv3.jpg,Minute Maid Park,"41,168","Houston, Texas",Grass,Houston Astros,2000,Retro Modern,2000,,29.75722,-95.355167
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/nats16950.jpg,Nationals Park,"41,339","Washington, D.C.",Grass,Washington Nationals,2008,Retro Modern,2014,,38.87273787,-77.007083
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/oco_topv2-600x298.jpg,RingCentral Coliseum,"47,170","Oakland, California",Grass,Oakland Athletics,1966,Multipurpose,2017,,37.751846,-122.199915
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/02/camden_top-1.jpg,Oriole Park at Camden Yards,"45,971","Baltimore, Maryland",Grass,Baltimore Orioles,1992,Retro Classic,,,39.28423536,-76.621833
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/petco_topv2.jpg,Petco Park,"40,209","San Diego, California",Grass,San Diego Padres,2004,Retro Modern,2007,,32.70736734,-117.1570771
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/pnc_topv2.jpg,PNC Park,"38,362","Pittsburgh, Pennsylvania",Grass,Pittsburgh Pirates,2001,Retro Classic,,,40.44712573,-80.0057742
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/prog_top.jpg,Progressive Field,"35,051","Cleveland, Ohio",Grass,Cleveland Indians,1994,Retro Modern,2019,,41.495951,-81.6850958
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/rogers_topv5.jpg,Rogers Centre,"49,282","Toronto, Ontario",AstroTurf,Toronto Blue Jays,1989,Multipurpose,2018,,43.64148047,-79.38911022
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/04/suntrust17950-1.jpg,Truist Park,"41,149","Cumberland, Georgia",Grass,Atlanta Braves,2017,Retro Modern,,,33.891107,-84.468734
+https://www.ballparksofbaseball.com/wp-content/uploads/2016/03/safeco17950.jpg,T-Mobile Park,"47,943","Seattle, Washington",Grass,Seattle Mariners,1999,Retro Modern,2022,,47.59130356,-122.3321346
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/target_topv2.jpg,Target Field,"38,885","Minneapolis, Minnesota",Grass,Minnesota Twins,2010,Retro Modern,,,44.98171033,-93.27786224
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/tropicana_topv2.jpg,Tropicana Field,"31,042","St. Petersburg, Florida",AstroTurf,Tampa Bay Rays,1990,Multipurpose,2019,,27.76790136,-82.65355734
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/wrigley_top.jpg,Wrigley Field,"41,268","Chicago, Illinois",Grass,Chicago Cubs,1914,Jewel Box,2015,,41.94810698,-87.65564276
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/yankee_topv2.jpg,Yankee Stadium,"47,422","Bronx, New York",Grass,New York Yankees,2009,Retro Classic,2016,,40.829699,-73.926456
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/astro16_top.jpg,Houston Astrodome,"54,816","Houston, Texas",AstroTurf,Houston Astros,1965,Multipurpose,,1995,29.68477385,-95.40787815
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/turner11950.jpg,Turner Field,"49,586","Atlanta, Georgia",Grass,Atlanta Braves,1997,Retro Classic,,2011,33.73549729,-84.38924398
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/04/sunlife16_topv2.jpg,Sun Life Stadium,"38,560","Miami, Florida",Grass,Florida Marlins,1987,Multipurpose,,2010,25.95776258,-80.23844773
+http://www.ballparksofbaseball.com/wp-content/uploads/2016/03/globe_topv2.jpg,Globe Life Park in Arlington,"48,114","Arlington, Texas",Grass,Texas Rangers,1994,Retro Classic,2005,2020,32.75145023,-97.08257168

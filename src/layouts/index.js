@@ -1,16 +1,16 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
-import './index.css'
+import './index.css';
 
 const linkStyle = {
   color: '#3498db',
   textDecoration: 'none',
   margin: '0 .25rem',
-}
+};
 
 const HeaderContainer = styled.div`
   margin: 0 auto 2rem auto;
@@ -25,12 +25,12 @@ const HeaderContainer = styled.div`
     flex-direction: column;
     margin: 0 10px 2rem 10px;
   }
-`
+`;
 
 const NavLinks = styled.nav`
   line-height: 3rem;
   height: 1rem;
-`
+`;
 
 const Header = () => (
   <HeaderContainer>
@@ -51,7 +51,7 @@ const Header = () => (
       </Link>
     </NavLinks>
   </HeaderContainer>
-)
+);
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -71,10 +71,10 @@ const TemplateWrapper = ({ children }) => (
       {children()}
     </div>
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
-}
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;

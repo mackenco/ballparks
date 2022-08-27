@@ -19,14 +19,15 @@
     "deploy": "npm run data && gatsby build --prefix-paths && gh-pages -d public",
     "build": "npm run data && gatsby build",
     "dev": "npm run data && gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --write 'src/**/*.js'",
     "precommit": "npm run format && git add ."
   },
   "devDependencies": {
+    "csv-parser": "^3.0.0",
     "gatsby-plugin-styled-components": "^1.0.5",
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "json-loader": "^0.5.7",
-    "prettier": "^1.11.1"
+    "prettier": "^2.7.1"
   }
 }

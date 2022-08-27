@@ -1,17 +1,20 @@
-import React from 'react'
-import styled from 'styled-components'
-import { withPrefix } from 'gatsby-link'
-
-import data from '../../data/data.js'
+import React from 'react';
+import styled from 'styled-components';
+import data from '../../data/data.js';
 
 const colors = {
   remaining: '#666666',
   retired: '#9c0000',
-}
+  icons: {
+    remaining: '#d2d2d2',
+    visited: '#000088',
+    retired: '#cc0000',
+  },
+};
 
 const Container = styled.div`
   padding: 0 10px;
-`
+`;
 
 const FlexDiv = styled.div`
   display: flex;
@@ -20,24 +23,25 @@ const FlexDiv = styled.div`
   @media (max-width: 960px) {
     width: 100%;
   }
-`
+`;
 
 const FlexSvg = styled.svg`
   flex-basis: calc(100% / 15);
   @media (max-width: 960px) {
     flex-basis: calc(100% / 10);
   }
-`
+`;
 
 const Heading = styled.h4`
   color: ${props => props.color};
   margin-bottom: 0.75rem;
-`
+`;
 
 class Icon extends React.Component {
   constructor() {
-    super()
+    super();
   }
+
   render() {
     return (
       <FlexSvg viewBox="0 0 1100 1100" width="100%" height="100%">
@@ -50,40 +54,38 @@ class Icon extends React.Component {
           d="M743.1 693.7l-29.6-29.6c-.8-.9-1-2-1.9-2.8l-180-180.1c-17.7-17.7-46.4-17.7-64.1 0l-66.3 66.3-.3-.3-145.4 145.7 31.7 31.7c.2.2.2.4.4.6l180.1 180.1c17.6 17.6 46.4 17.6 64.1 0l180-180.1c.1-.1.1-.2.2-.3l31.1-31.2z"
         />
       </FlexSvg>
-    )
+    );
   }
 }
 
 class StatsPage extends React.Component {
   constructor() {
-    super()
+    super();
   }
 
   render() {
-    const icons = []
-    const stats = data.stats
-    const states = [
-      { key: 'remaining', color: 'd2d2d2' },
-      { key: 'visited', color: '000088' },
-      { key: 'retired', color: 'cc0000' },
-    ]
+    const visited = data.filter(bp => !!bp.visited && !bp.retired);
+    const retired = data.filter(bp => !!bp.retired);
+    const remaining = data.filter(bp => !bp.visited && !bp.retired);
 
-    const [visitedCoords, remainingCoords, retiredCoords] = states.map(
-      state => {
-        const { key, color } = state
-        const icon = withPrefix(`${state}.png'`) // TODO Get this to work
+    const icons = [
+      ...visited.map(bp => <Icon key={bp.name + '-icon'} color={colors.icons.visited} />),
+      ...remaining.map(bp => <Icon key={bp.name + '-icon'} color={colors.icons.remaining} />),
+      ...retired.map(bp => <Icon key={bp.name + '-icon'} color={colors.icons.retired} />),
+    ];
 
-        return [
-          `color:0x${color}`,
-          ...stats[key].map(bp => {
-            icons.push(<Icon key={icons.length} color={'#' + color} />)
-            return `${bp.latitude},${bp.longitude}`
-          }),
-        ].join('%7C')
-      }
-    )
-
-    const mapStyle = [].join('%7C')
+    const visitedCoords = [
+      `color:0x${colors.icons.visited.replace('#', '')}`,
+      ...visited.map(bp => bp.latitude + ',' + bp.longitude),
+    ].join('%7C');
+    const remainingCoords = [
+      `color:0x${colors.icons.remaining.replace('#', '')}`,
+      ...remaining.map(bp => bp.latitude + ',' + bp.longitude),
+    ].join('%7C');
+    const retiredCoords = [
+      `color:0x${colors.icons.retired.replace('#', '')}`,
+      ...retired.map(bp => bp.latitude + ',' + bp.longitude),
+    ].join('%7C');
 
     const src = [
       'https://maps.googleapis.com/maps/api/staticmap?size=640x380',
@@ -92,35 +94,24 @@ class StatsPage extends React.Component {
       `markers=${remainingCoords}`,
       `markers=${visitedCoords}`,
       `key=AIzaSyAxmXsbKcxcN_HPaMxvcYDtOJSVLCunig0`,
-      // `style=${mapStyle}`,
-    ].join('&')
+    ].join('&');
 
     return (
       <Container>
         <h2 style={{ marginBottom: '3rem' }}>Stats</h2>
-
-        <h1 style={{ fontSize: '6rem' }}>{stats.visited.length}</h1>
-
+        <h1 style={{ fontSize: '6rem' }}>{visited.length}</h1>
         <h2>Ballparks Visited</h2>
         <FlexDiv> {icons} </FlexDiv>
         <br />
-        <p>{stats.visited.map(b => b.name).join(', ')}</p>
+        <p>{visited.map(b => b.name).join(', ')}</p>
         <img src={src} />
-        <Heading color={colors.remaining}>
-          {stats.remaining.length} Remaining
-        </Heading>
-        <p style={{ color: '#666666' }}>
-          {stats.remaining.map(b => b.name).join(', ')}
-        </p>
-        <Heading color={colors.retired}>
-          {stats.retired.length} Retired Parks Visited
-        </Heading>
-        <p style={{ color: '#9c0000' }}>
-          {stats.retired.map(b => b.name).join(', ')}
-        </p>
+        <Heading color={colors.remaining}>{remaining.length} Remaining</Heading>
+        <p style={{ color: colors.remaining }}>{remaining.map(b => b.name).join(', ')}</p>
+        <Heading color={colors.retired}>{retired.length} Retired Parks Visited</Heading>
+        <p style={{ color: colors.retired }}>{retired.map(b => b.name).join(', ')}</p>
       </Container>
-    )
+    );
   }
 }
 
-export default StatsPage
+export default StatsPage;
